@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-typewriter: typing 3s ease-in forwards, blink 167ms step-end 18; 
+
+  @keyframes typing {
+    from { width: 0 }
+    to {width:18ch;}
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: #9CA3AF;
+    }
+  }
+
+  --animate-page: fadeIn 2s ease-in forwards;
+
+  @keyframes fadeIn {
+    from { opacity: 0 ; transform: translateY(20px); }
+    to { opacity: 1 ; transform: translateY(0); }
+  }
+
+  --animate-underline: underlineAnimation 2s ease-in forwards;
+
+  @keyframes underlineAnimation {
+    from { text-decoration: none; }
+    to { text-decoration: underline; }
+  }
+}
